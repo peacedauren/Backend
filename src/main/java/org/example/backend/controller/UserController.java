@@ -15,7 +15,7 @@ import java.util.UUID;
 public class UserController {
     private final UserService userService;
 
-    @PostMapping("/create")
+    @PostMapping("")
     public UUID create(@RequestBody UserDTO userDTO) {
         return userService.save(userDTO);
     }
